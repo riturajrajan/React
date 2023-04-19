@@ -1,0 +1,11 @@
+{
+  "name": "demo-code",
+  "version": "1.0.0",
+  "description": "demo code for reactjs without using create-react-app command",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Rituraj Rajan",
+  "license": "ISC"
+}
