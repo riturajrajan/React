@@ -1,4 +1,4 @@
-const HeaderComponent = () => (
+const Header = () => (
   <div className="header-container">
     <div className="logo">
       <img
@@ -19,4 +19,4 @@ const HeaderComponent = () => (
   </div>
 );
 
-export default HeaderComponent;
+export default Header;
