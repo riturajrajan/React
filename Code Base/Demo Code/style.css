@@ -75,3 +75,7 @@ body, html, ul {
     background: #e5d0d0;
     padding: 10px;
 }
+
+.filter-btn {
+    cursor: pointer;
+}
