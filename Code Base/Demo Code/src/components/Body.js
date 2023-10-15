@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
+import UserClass from "./UserClass";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   let [restaurantList, setFilteredRes] = useState([]); // default value to state variable
   let [searchText, setSearchText] = useState("");
   let [filteredrestaurant, setFilteredRestaurant] = useState([]);
+  const onlineStatus = useOnlineStatus();
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -19,6 +23,14 @@ const Body = () => {
     setFilteredRes(response);
     setFilteredRestaurant(response);
   };
+
+  if (!onlineStatus) {
+    return (
+      <h1>
+        Its seems like you are offline. Please check your internet connection
+      </h1>
+    );
+  }
 
   if (restaurantList.length === 0) {
     return <h1>Loading...</h1>;
