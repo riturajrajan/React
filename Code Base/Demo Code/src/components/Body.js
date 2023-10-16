@@ -64,6 +64,7 @@ const Body = () => {
           Top Rated Restaurant
         </button>
       </div>
+      {false && <h1>This is jsx</h1>}
       <div className="res-container">
         {filteredrestaurant.map((res) => (
           <RestaurantCard resData={res.info} key={res.info.id} />
