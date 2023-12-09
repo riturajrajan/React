@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Header = () => (
-  <div className="header-container">
+  <div className="flex">
     <div className="logo">
       <img
         id="logoId"
